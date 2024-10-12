@@ -19,6 +19,10 @@ app = Flask(__name__)
 # Load the trained model
 model = joblib.load('model.pkl')
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({'message': 'Welcome to the Bank Complaints API'}), 200
+
 @app.route('/signup', methods=['POST'])
 def signup():
     try:
