@@ -21,7 +21,7 @@ model = joblib.load('model.pkl')
 
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({'message': 'Welcome to the Bank Complaints API'}), 200
+    return "<h1>Welcome to the Bank Complaints Classification API</h1>"
 
 @app.route('/signup', methods=['POST'])
 def signup():
