@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.feature_extraction.text import TfidfVectorizer
 from pymongo import MongoClient
 from bson import ObjectId
 import pandas as pd
