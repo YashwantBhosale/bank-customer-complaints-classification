@@ -7,6 +7,7 @@ import joblib
 import bcrypt
 import jwt
 import datetime
+import os
 
 SECRET_KEY = 'thequickbrownfoxjumpsoverthelazydog'
 client = MongoClient('mongodb+srv://yashwantbhosale07:MhlUoNi0hCeArHSG@cluster0.uoqen.mongodb.net/')
@@ -140,5 +141,6 @@ def get_data():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)

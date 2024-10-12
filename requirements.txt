@@ -5,6 +5,7 @@ charset-normalizer==3.4.0
 click==8.1.7
 dnspython==2.7.0
 Flask==3.0.3
+gunicorn==23.0.0
 idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.4
@@ -12,6 +13,7 @@ joblib==1.4.2
 MarkupSafe==3.0.1
 numpy==2.1.2
 nvidia-nccl-cu12==2.23.4
+packaging==24.1
 pandas==2.2.3
 PyJWT==2.9.0
 pymongo==4.10.1
@@ -25,3 +27,4 @@ threadpoolctl==3.5.0
 tzdata==2024.2
 urllib3==2.2.3
 Werkzeug==3.0.4
+xgboost==2.1.1
