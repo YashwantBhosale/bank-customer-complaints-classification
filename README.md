@@ -4,7 +4,7 @@ This is a simple project that automatically classifies the bank customer complai
 This project uses basic Natural Language Processing (NLP) techniques to preprocess the text data and then applies a supervised machine learning model to classify the complaints into the five categories.
 The model is trained on a dataset of roughly 1,25,000 bank customer complaints and achieves an accuracy of 85% on the test set.
 
-**For detailed report please refer to full report [here]('/docs/Report.pdf').**
+**For detailed report please refer to full report [here](/docs/Report.pdf).**
 
 ### Dataset
 
