@@ -1,0 +1,88 @@
+.dashboardContainer {
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .welcomeMessage {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formHeading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .complaintForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .inputField {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .textArea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    min-height: 100px;
+  }
+  
+  .submitButton {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .logoutButton {
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .result_div{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+
+  @media screen and (max-width: 400px){
+    .dashboardContainer{
+        margin: 200px 10px;
+    }
+  }
