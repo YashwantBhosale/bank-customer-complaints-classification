@@ -228,9 +228,7 @@ s3transfer==0.10.4
 scikit-learn==1.5.2
 scipy==1.14.1
 scour==0.38.2
-selinux @ file:///builddir/build/BUILD/libselinux-3.7/src
 Send2Trash==1.8.2
-sepolicy @ file:///builddir/build/BUILD/selinux-3.7/python/sepolicy
 setools==4.5.1
 setuptools==69.0.3
 shellingham==1.5.4
