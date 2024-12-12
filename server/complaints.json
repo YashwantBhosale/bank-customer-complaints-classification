@@ -1,0 +1,75 @@
+{
+    "complaints": {
+      "credit_card": [
+        {
+          "id": 1,
+          "complaint": "I was charged a late fee despite making my payment on time. I confirmed the transaction was completed well before the deadline, but the bank insists that they did not receive it. This has impacted my credit score, and I would like a refund of the late fee and an investigation into this matter."
+        },
+        {
+          "id": 2,
+          "complaint": "My credit card was compromised, and unauthorized transactions were made totaling over $500. I reported the issue immediately, but the customer service representative was unhelpful and took a long time to freeze my account. I am still waiting for a resolution and a refund for the fraudulent charges."
+        },
+        {
+          "id": 3,
+          "complaint": "The interest rate on my credit card increased without notice last month. I have been a loyal customer for over five years, and I was not informed about the change in terms. I would like an explanation and a review of my account to see if I qualify for a lower rate."
+        }
+      ],
+      "credit_reporting": [
+        {
+          "id": 1,
+          "complaint": "My credit report contains inaccurate information regarding my payment history. It shows that I missed several payments last year, which is not true. I have contacted the credit bureau multiple times, but they have not resolved the issue, and it is affecting my ability to get loans."
+        },
+        {
+          "id": 2,
+          "complaint": "I was denied a loan because of a report that was not updated. I have been making regular payments on my existing loans, but my credit report inaccurately reflects late payments. I would like to have this corrected as soon as possible so I can apply for the loan again."
+        },
+        {
+          "id": 3,
+          "complaint": "I requested a copy of my credit report several weeks ago, but it was never provided. I need this document to verify the information that is being reported about me, and I would like to know how to escalate this issue if it remains unresolved."
+        }
+      ],
+      "debt_collection": [
+        {
+          "id": 1,
+          "complaint": "I received calls from a debt collector regarding a debt that isn't mine. They insist that I owe money for an account that I have never opened. I have provided proof of my identity, but the calls continue, and I am being harassed daily."
+        },
+        {
+          "id": 2,
+          "complaint": "The debt collector did not provide validation of the debt as requested. I asked them to send documentation proving I owe this amount, but they have ignored my request and continue to threaten me with legal action."
+        },
+        {
+          "id": 3,
+          "complaint": "I was threatened with legal action for a debt I paid off two years ago. I have documentation showing the debt was settled, yet the collector insists that I still owe money. This has caused me a great deal of stress and confusion."
+        }
+      ],
+      "mortgages_and_loans": [
+        {
+          "id": 1,
+          "complaint": "My mortgage application was denied without a clear explanation. I submitted all required documents and have a solid financial history. I would like to understand the reasons for the denial and see if there is anything I can do to appeal the decision."
+        },
+        {
+          "id": 2,
+          "complaint": "I was charged hidden fees during the mortgage closing process that were not disclosed upfront. I felt misled by the lender, and these additional costs have significantly impacted my budget. I am requesting a detailed breakdown of these charges and a review of my loan terms."
+        },
+        {
+          "id": 3,
+          "complaint": "My loan servicer failed to apply my payments correctly, resulting in my account being reported as delinquent. I have made all my payments on time and have contacted them several times, but the issue remains unresolved. I need immediate assistance to correct this error."
+        }
+      ],
+      "retail_banking": [
+        {
+          "id": 1,
+          "complaint": "My bank account was overdrawn due to erroneous transactions that I did not authorize. I noticed these charges while reviewing my statement and promptly reported them, but the bank has yet to rectify the situation or provide a refund."
+        },
+        {
+          "id": 2,
+          "complaint": "I cannot access my online banking account despite resetting my password multiple times. The website keeps displaying an error message. I rely on online banking for my transactions, and this issue is causing me significant inconvenience."
+        },
+        {
+          "id": 3,
+          "complaint": "The customer service representative I spoke with was unhelpful and rude. I called to inquire about a discrepancy in my account balance, and instead of assistance, I was met with dismissive comments. I expect better service from my bank."
+        }
+      ]
+    }
+  }
+  
