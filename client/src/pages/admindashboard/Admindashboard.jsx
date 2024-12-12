@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { Navigate, useNavigate } from "react-router-dom";
 
-const BASE_URL = "https://bank-complaint-classification-backend-1.onrender.com/";
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Admindashboard = () => {
     const {user, dispatch} = useAuthContext();

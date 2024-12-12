@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./signup.module.css";
 import { useNavigate } from "react-router-dom";
 
-const BASE_URL = 'https://bank-complaint-classification-backend-1.onrender.com/';
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;;
 
 const Signup = () => {
 	const navigate = useNavigate();

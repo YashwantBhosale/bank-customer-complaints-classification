@@ -3,7 +3,7 @@ import styles from "./login.module.css";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
-const BASE_URL = 'https://bank-complaint-classification-backend-1.onrender.com/';
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 const Login = () => {
     const {user, dispatch} = useAuthContext();
     const navigate = useNavigate();

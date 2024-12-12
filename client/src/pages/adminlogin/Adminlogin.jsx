@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from './adminlogin.module.css'
 import { useAuthContext } from "../../hooks/useAuthContext";
 
-const BASE_URL = 'https://bank-complaint-classification-backend-1.onrender.com/';
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Adminlogin = () => {
     const [formData, setFormData] = useState({
