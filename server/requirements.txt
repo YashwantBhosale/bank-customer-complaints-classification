@@ -1,8 +1,6 @@
 bcrypt==4.2.1
 blinker==1.9.0
-cffi==1.17.1
 click==8.1.7
-cryptography==44.0.0
 dnspython==2.7.0
 Flask==3.1.0
 Flask-Cors==5.0.0
@@ -12,7 +10,7 @@ joblib==1.4.2
 MarkupSafe==3.0.2
 nltk==3.9.1
 numpy==2.2.0
-pycparser==2.22
+pandas==2.2.3
 PyJWT==2.10.1
 pymongo==4.10.1
 python-dateutil==2.9.0.post0

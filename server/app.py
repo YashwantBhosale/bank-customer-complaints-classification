@@ -12,11 +12,13 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 import string
+from dotenv import load_dotenv
 
 nltk.download("stopwords")
 ps = PorterStemmer()
 stop_words = set(stopwords.words("english"))
 
+load_dotenv()
 
 def clean_text(text):
     text = text.lower()
@@ -34,9 +36,12 @@ def stem_text(text):
     return " ".join(text)
 
 
-SECRET_KEY = "thequickbrownfoxjumpsoverthelazydog"
+SECRET_KEY = os.getenv("SECRET_KEY")
+MONGO_URI = os.getenv("MONGO_URI")
+
+print("secret key: ", SECRET_KEY)
 client = MongoClient(
-    "mongodb+srv://yashwantbhosale07:MhlUoNi0hCeArHSG@cluster0.uoqen.mongodb.net/"
+    MONGO_URI
 )
 
 # Load pre-fitted vectorizer
