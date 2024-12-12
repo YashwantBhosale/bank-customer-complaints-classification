@@ -8,10 +8,12 @@ import datetime
 import os
 from flask_cors import CORS
 import re
+import nltk
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 import string
 
+nltk.download("stopwords")
 ps = PorterStemmer()
 stop_words = set(stopwords.words("english"))
 
