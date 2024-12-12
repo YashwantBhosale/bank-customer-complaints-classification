@@ -264,7 +264,7 @@ def predict():
             "text": raw_text,
             "processed_text": stemmed_text,
             "prediction": prediction,
-            "createdAt": datetime.now().isoformat(),
+            "createdAt": datetime.datetime.now().isoformat()
         }
 
         # Insert into MongoDB
