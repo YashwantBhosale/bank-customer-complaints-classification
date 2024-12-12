@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from bson import ObjectId
-import pandas as pd
-import numpy as np
 import joblib
 import bcrypt
 import jwt
@@ -73,7 +71,7 @@ def signup():
             "password": hashed_password,
             "email": data["email"],
             "role": "user",
-            "created_at": pd.Timestamp.now(),
+            "created_at": datetime.datetime.now().isoformat(),
         }
 
         collection.insert_one(user)
@@ -217,13 +215,14 @@ def get_data():
         return jsonify({"error": str(e)}), 500
 
 @app.route("/predict", methods=["POST"])
+
+@app.route("/predict", methods=["POST"])
 def predict():
     try:
         data = request.get_json(force=True)  # Ensure JSON format
-        data_unseen = pd.DataFrame([data])
 
         # Ensure that 'text' exists in the incoming data
-        if "text" not in data_unseen.columns:
+        if "text" not in data:
             return jsonify({"error": "No text field found in input"}), 400
 
         token = request.headers.get("Authorization")
@@ -250,22 +249,20 @@ def predict():
             return jsonify({"error": "Invalid token"}), 401
 
         # Clean and preprocess the text
-        raw_text = data_unseen["text"].iloc[0]
-        cleaned_text = clean_text(raw_text)   # Apply regex cleaning
-        stemmed_text = stem_text(cleaned_text)  # Apply stemming
+        raw_text = data["text"]  # Directly access the text field
+        cleaned_text = clean_text(raw_text)   
+        stemmed_text = stem_text(cleaned_text)
 
-        # Vectorize the processed text
         vectorized_data = vectorizer.transform([stemmed_text])
         prediction = model.predict(vectorized_data)
         prediction = prediction[0]
 
-        # Create a complaint record
         complaint = {
-            "user_id": str(user["_id"]),  # Convert ObjectId to string
+            "user_id": str(user["_id"]),
             "text": raw_text,
             "processed_text": stemmed_text,
             "prediction": prediction,
-            "createdAt": pd.Timestamp.now(),
+            "createdAt": datetime.now().isoformat(),
         }
 
         # Insert into MongoDB
@@ -276,7 +273,6 @@ def predict():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
 
 
 if __name__ == "__main__":
